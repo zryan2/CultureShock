@@ -10,6 +10,8 @@ public class Countries extends AppCompatActivity {
 
     Button buttonUSA;
 
+
+    //default screen when first open app, should change to country chosen as default after
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
