@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EBf5FB"
+    android:orientation="vertical"
     tools:context="com.example.ryan.cultureshock.MainActivity">
 
     <FrameLayout
