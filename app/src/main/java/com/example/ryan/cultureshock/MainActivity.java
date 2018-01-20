@@ -14,7 +14,6 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     private TextView mTextMessage;
-
     Fragment selectedFragment = null;
 
 
@@ -27,8 +26,16 @@ public class MainActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
             switch (item.getItemId()) {
+                case R.id.navigation_home:
+                    //go to country info fragment
+                    CountryInfo countryInfo = new CountryInfo();
+                    FragmentTransaction transaction4 = getSupportFragmentManager().beginTransaction();
+                    selectedFragment = countryInfo;
+                    transaction4.replace(R.id.contentLayout, selectedFragment);
+                    transaction4.commit();
+                    return true;
                 case R.id.navigation_law:
-                    //go to law activity
+                    //go to law fragment
                     Law law = new Law();
                     FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                     selectedFragment = law;
@@ -36,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
                     transaction.commit();
                     return true;
                 case R.id.navigation_culture:
-                    //Go to culture activity
+                    //Go to culture fragment
                     Culture culture = new Culture();
                     FragmentTransaction transaction2 = getSupportFragmentManager().beginTransaction();
                     selectedFragment = culture;
@@ -44,13 +51,14 @@ public class MainActivity extends AppCompatActivity {
                     transaction2.commit();
                     return true;
                 case R.id.navigation_phrases:
-                    //go to phrases activity
+                    //go to phrases fragment
                     Phrases phrases = new Phrases();
                     FragmentTransaction transaction3 = getSupportFragmentManager().beginTransaction();
                     selectedFragment = phrases;
                     transaction3.replace(R.id.contentLayout, selectedFragment);
                     transaction3.commit();
                     return true;
+
             }
             return false;
         }

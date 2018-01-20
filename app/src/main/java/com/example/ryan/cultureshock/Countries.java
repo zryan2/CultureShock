@@ -17,7 +17,7 @@ public class Countries extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_countries);
 
-        buttonUSA = (Button) findViewById(R.id.buttonUSA);
+        buttonUSA = (Button)findViewById(R.id.buttonUSA);
 
         buttonUSA.setOnClickListener(
                 new Button.OnClickListener() {
