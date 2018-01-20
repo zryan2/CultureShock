@@ -1,5 +1,6 @@
 package com.example.ryan.cultureshock;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -7,6 +8,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -14,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView mTextMessage;
 
     Fragment selectedFragment = null;
+
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -23,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
             switch (item.getItemId()) {
                 case R.id.navigation_home:
-                  //go to law activity
+                    //go to law activity
                     Law law = new Law();
                     FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                     selectedFragment = law;
@@ -46,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                     transaction3.replace(R.id.contentLayout, selectedFragment);
                     transaction3.commit();
                     return true;
-                    //Hihi
+                //Hihi
             }
             return false;
         }
@@ -57,8 +61,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
         CountryInfo countryInfo = new CountryInfo();
         FragmentTransaction transaction4 = getSupportFragmentManager().beginTransaction();
         selectedFragment = countryInfo;
@@ -68,5 +70,6 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
+
 
 }
