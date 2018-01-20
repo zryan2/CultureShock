@@ -7,18 +7,24 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.design.internal.BottomNavigationItemView;
+import android.support.design.internal.BottomNavigationMenuView;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.Window;
 import android.widget.TextView;
+
+import java.lang.reflect.Field;
 
 public class MainActivity extends AppCompatActivity {
 
     private TextView mTextMessage;
     Fragment selectedFragment = null;
+
 
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -90,11 +96,11 @@ public class MainActivity extends AppCompatActivity {
         transaction4.commit();
 
 
-
-
-
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        //stop shifting englarging on navigation view bar
+        BottomNavigationViewHelper.disableShiftMode(navigation);
+
     }
 
 
