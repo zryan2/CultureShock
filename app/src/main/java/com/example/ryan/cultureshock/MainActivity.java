@@ -13,12 +13,13 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView mTextMessage;
 
+    Fragment selectedFragment = null;
+
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            Fragment selectedFragment = null;
 
             switch (item.getItemId()) {
                 case R.id.navigation_home:
@@ -55,6 +56,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+
+        CountryInfo countryInfo = new CountryInfo();
+        FragmentTransaction transaction4 = getSupportFragmentManager().beginTransaction();
+        selectedFragment = countryInfo;
+        transaction4.replace(R.id.contentLayout, selectedFragment);
+        transaction4.commit();
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
