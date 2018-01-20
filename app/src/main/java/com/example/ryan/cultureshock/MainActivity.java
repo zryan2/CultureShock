@@ -19,11 +19,13 @@ public class MainActivity extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
                   //go to law activity
-
                     return true;
                 case R.id.navigation_dashboard:
                     //Go to culture activity
-
+                    Culture culture = new Culture();
+                    android.app.FragmentManager manager = getFragmentManager();
+//                    manager.beginTransaction().replace(R.id.contentLayout,
+//                            culture, culture.getTag()).commit();
                     return true;
                 case R.id.navigation_notifications:
                     //go to phrases activity
