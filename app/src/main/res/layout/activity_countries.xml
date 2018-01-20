@@ -65,8 +65,8 @@
         android:layout_alignParentStart="false"
         android:layout_below="@+id/button"
         android:layout_marginTop="210dp"
-        android:text="Brazil"
+        android:text="Brasil"
         tools:layout_editor_absoluteX="12dp"
         tools:layout_editor_absoluteY="297dp" />
-    
+
 </RelativeLayout>
