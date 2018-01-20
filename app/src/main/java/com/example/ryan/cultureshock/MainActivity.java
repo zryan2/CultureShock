@@ -95,6 +95,12 @@ public class MainActivity extends AppCompatActivity {
         transaction4.replace(R.id.contentLayout, selectedFragment);
         transaction4.commit();
 
+        Bundle buttonText=getIntent().getExtras();
+        if(buttonText==null){
+            return;
+        }
+        String appleMessage=buttonText.getString("countryName");
+        setTitle(appleMessage);
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);

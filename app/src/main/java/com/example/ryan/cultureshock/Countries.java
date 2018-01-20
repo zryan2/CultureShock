@@ -24,6 +24,8 @@ public class Countries extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(Countries.this, MainActivity.class);
+                        String buttonChosen = (String)buttonUSA.getText();
+                        i.putExtra("countryName", buttonChosen);
                         startActivity(i);
                     }
                 }
