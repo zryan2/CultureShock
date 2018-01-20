@@ -1,38 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.ryan.cultureshock.MainActivity">
+    tools:context="com.example.ryan.cultureshock.Culture"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:text="Behavior"/>
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="match_parent"
+
+        android:layout_height="61dp"
+        android:text="Regional Differences" />
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="match_parent"
+
+        android:layout_height="61dp"
+        android:text="Country Map"/>
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="360dp"
+        android:layout_width="match_parent"
+
         android:layout_height="61dp"
-        android:text="Food"
-        tools:layout_editor_absoluteX="12dp"
-        tools:layout_editor_absoluteY="16dp" />
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="360dp"
-        android:layout_height="60dp"
-        android:text="Behavior"
-        tools:layout_editor_absoluteX="12dp"
-        tools:layout_editor_absoluteY="106dp" />
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="360dp"
-        android:layout_height="61dp"
-        android:text="Regional Differences"
-        tools:layout_editor_absoluteX="12dp"
-        tools:layout_editor_absoluteY="196dp" />
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="360dp"
-        android:layout_height="61dp"
-        android:text="Country Map"
-        tools:layout_editor_absoluteX="12dp"
-        tools:layout_editor_absoluteY="286dp" />
-</android.support.constraint.ConstraintLayout>
+        android:text="Food" />
+</LinearLayout>
