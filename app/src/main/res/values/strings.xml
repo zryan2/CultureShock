@@ -22,14 +22,40 @@
 
     <string name="phraseText">
 
-        •Where is the...?\n
-        •Can I have water?\n
-        •I would like to order this.\n
-        •Thank you, you're welcome.\n
-        •Excuse me.\n
-        •I'm sorry\n
-        •Yes please.\n
-        •Sir/Ma'am.\n
+        • Where is the...?\n
+        • Can I have water?\n
+        • I would like to order this.\n
+        • Thank you, you're welcome.\n
+        • Excuse me.\n
+        • I'm sorry\n
+        • Yes please.\n
+        • Sir/Ma'am.\n
+
+    </string>
+
+    <string name="foodText">
+
+        • Tipping culture: At the end of meals customers are expected to tip their waiter.\n
+        • 15% = General Minimum/Satisfied\n
+        • 18% = Very Satisfied\n
+        • 20+%= Great Service!\n
+        • When you go to restaurants it is not uncommon to not have specific ingredients in your dish, it is ok to ask the waiter to withhold these ingredients.\n
+
+        • In the U.S fork, knives and spoon are the customary utensils. It’s a good idea to learn other manners associated with these utensils.\n
+        • Slurping, and Burping during meals is frowned upon.\n
+        • While with friends, you will most likely split the bill. Generally the times when only one person pays for the bill is for special occasions, or if they insist.
+
+
+    </string>
+
+
+
+    <string name="behaviorsText">
+
+        • It is frowned upon to spit on the ground
+   • Direct eye contact is okay and sometimes encouraged, just don’t stare too hard
+   • Gift giving is not common when someone invites you to their home unless it is some sort of special event, then a small gift such as wine is acceptable.
+        • Being on time and/or early is very important in american culture
 
     </string>
 
