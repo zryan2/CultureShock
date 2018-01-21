@@ -5,13 +5,25 @@
     tools:context="com.example.ryan.cultureshock.Food">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="30dp"
-        android:fontFamily="sans-serif"
-        android:lineSpacingExtra="14sp"
-        android:text="@string/foodText" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="30dp"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="14sp"
+                android:text="@string/foodText" />
+        </LinearLayout>
+    </ScrollView>
+
 </FrameLayout>

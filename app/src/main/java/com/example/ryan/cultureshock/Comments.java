@@ -31,6 +31,9 @@ import java.util.List;
  */
 public class Comments extends Fragment implements View.OnClickListener {
 
+    public final static String COMMENT_ID =  "Comment_id";
+    public final static String COMMENT_TEXT =  "Comment_text";
+
     EditText commentText;
     Button submitBtn;
     View v;
@@ -67,8 +70,10 @@ public class Comments extends Fragment implements View.OnClickListener {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 commentData = commentDataList.get(i);
-                thumbsUp= (ImageView) commentList.findViewById(R.id.thumbsUp);
-                thumbsDown = (ImageView) commentList.findViewById(R.id.thumbsDown);
+                Intent intent = new Intent(getActivity(), ReplyComment.class);
+                intent.putExtra(COMMENT_ID,commentData.getCommentId());
+                intent.putExtra(COMMENT_TEXT,commentData.getCommentText());
+                startActivity(intent);
                 thumbsUp.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {

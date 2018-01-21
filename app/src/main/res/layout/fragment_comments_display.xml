@@ -24,19 +24,20 @@
             android:layout_weight="1"
             app:srcCompat="@drawable/green_thumbs" />
 
+        <TextView
+            android:id="@+id/tvPriority"
+            android:layout_width="1dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textAlignment="center" />
+
         <ImageView
             android:id="@+id/thumbsDown"
             android:layout_width="4dp"
             android:layout_height="25dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/red_down" />
-
-        <TextView
-            android:id="@+id/tvPriority"
-            android:layout_width="13dp"
-            android:layout_height="32dp"
-            android:layout_weight="1"
-            android:text="TextView" />
 
         <TextView
             android:id="@+id/replyButton"

@@ -1,19 +1,27 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.ryan.cultureshock.Phrases"
     android:background="#ffffff">
-
     <!-- TODO: Update blank fragment layout -->
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="407dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_margin="30dp"
+        android:layout_marginTop="86dp"
+        android:layout_marginStart="64dp"
+        android:elevation="6dp"
         android:fontFamily="sans-serif"
         android:lineSpacingExtra="18sp"
         android:text="@string/phraseText" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/textbubbles" />
 </FrameLayout>
