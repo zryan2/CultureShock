@@ -19,6 +19,17 @@
 
     </string>
 
+    <string name="phraseText">
+
+        •Where is the...?\n
+        •Can I have water?\n
+        •I would like to order this.\n
+        •Thank you, you're welcome.\n
+        •Excuse me.\n
+        •I'm sorry\n
+
+    </string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="tbd">TBD</string>
 </resources>
