@@ -52,12 +52,25 @@
 
     <string name="behaviorsText">
 
-        • It is frowned upon to spit on the ground
-   • Direct eye contact is okay and sometimes encouraged, just don’t stare too hard
-   • Gift giving is not common when someone invites you to their home unless it is some sort of special event, then a small gift such as wine is acceptable.
-        • Being on time and/or early is very important in american culture
+        • It is frowned upon to spit on the ground\n
+        • Direct eye contact is okay and sometimes encouraged, just don’t stare too hard\n
+        • Gift giving is not common when someone invites you to their home unless it is some sort of special event, then a small gift such as wine is acceptable.\n
+        • Being on time and/or early is very important in american culture\n
 
     </string>
+
+    <string name="regDeffText">
+
+        • In the south people are more likely to go out of their way to hold doors for people.\n
+        • Different parts of the U.S have vastly different slang words\n
+        • Tap water tastes different between states\n
+        • Tap water is free in restaurants!\n
+        • Since there is a drought in california you have to ask for water, they don't just offer it to you.\n
+        • It’s generally okay to walk inside people’s houses with your shoes on.\n
+
+
+    </string>
+
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="tbd">TBD</string>
