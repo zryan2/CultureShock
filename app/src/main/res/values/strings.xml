@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">CultureShock</string>
     <string name="title_home">Home</string>
@@ -5,7 +6,16 @@
     <string name="title_culture">Culture</string>
     <string name="title_phrases">Phrases</string>
 
+    <string name="lawText">
+
+        Drinking Age 21
+Weed is legal in only some states, check the specific state for regulations
+Alcoholic Beverages can’t be in public,
+Driving on the right side of the road
+Different states have different laws
+Jaywalking is illegal \n
+Smoking is against the law in most public places. Sometimes public spaces will have designated smoking areas.\n </string>
+
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="tbd">TBD</string>
 </resources>

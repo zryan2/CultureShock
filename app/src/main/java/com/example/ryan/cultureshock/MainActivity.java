@@ -16,9 +16,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.Window;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import java.lang.reflect.Field;
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -95,12 +98,15 @@ public class MainActivity extends AppCompatActivity {
         transaction4.replace(R.id.contentLayout, selectedFragment);
         transaction4.commit();
 
+
+
+        //getting country name from list, change action title
         Bundle buttonText=getIntent().getExtras();
         if(buttonText==null){
             return;
         }
-        String appleMessage=buttonText.getString("countryName");
-        setTitle(appleMessage);
+        String countryMessage=buttonText.getString("countryName");
+        setTitle(countryMessage);
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);

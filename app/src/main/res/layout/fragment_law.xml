@@ -4,17 +4,16 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.ryan.cultureshock.Law">
+    tools:context=".ListActivity" >
 
     <!-- TODO: Update blank fragment layout -->
 
-    <EditText
-        android:id="@+id/editText"
+    <TextView
+        android:id="@+id/lawText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:ems="10"
-        android:inputType="textMultiLine"
-
-        android:text="•Drinking Age 21.•Marijuana  is legal in only some states, check the specific state for regulations.        •Alcoholic beverages can’t be in public.   •Driving on the right side of the road.         •Different states have different laws. •Jaywalking is illegal. •Smoking is against the law in most public places. •Sometimes public spaces will have designated smoking areas.  " />
+        android:layout_marginTop="123dp"
+        android:text="@string/lawText" />
 </RelativeLayout>
