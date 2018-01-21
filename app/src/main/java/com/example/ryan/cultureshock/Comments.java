@@ -7,12 +7,20 @@ import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.Toast;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -23,6 +31,9 @@ public class Comments extends Fragment implements View.OnClickListener {
     EditText commentText;
     Button submitBtn;
     View v;
+    ListView listViewComment;
+    List<CommentData> commentDataList;
+
     DatabaseReference databaseComments;
 
     public Comments() {
@@ -39,6 +50,9 @@ public class Comments extends Fragment implements View.OnClickListener {
 
         commentText = (EditText) v.findViewById(R.id.commentText);
         submitBtn = (Button) v.findViewById(R.id.submitBtn);
+
+        listViewComment = (ListView) v.findViewById(R.id.listViewComment);
+        commentDataList = new ArrayList<>();
         submitBtn.setOnClickListener(this);
 //        submitBtn.setOnClickListener(new View.OnClickListener(){
 //            @Override
@@ -48,6 +62,29 @@ public class Comments extends Fragment implements View.OnClickListener {
 //        });
         return v;
     }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        databaseComments.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                commentDataList.clear();
+                for(DataSnapshot commentSnapshot: dataSnapshot.getChildren()){
+                    CommentData commentData = commentSnapshot.getValue(CommentData.class);
+                    commentDataList.add(commentData);
+                }
+                CommentList adapter = new CommentList(getActivity(), commentDataList);
+                listViewComment.setAdapter(adapter);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+    }
+
     public void onClick(View v){
         switch(v.getId()){
             case R.id.submitBtn :
