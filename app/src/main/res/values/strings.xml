@@ -22,14 +22,14 @@
 
     <string name="phraseText">
 
-        • Where is the...?\n
-        • Can I have water?\n
-        • I would like to order this.\n
-        • Thank you, you're welcome.\n
-        • Excuse me.\n
-        • I'm sorry\n
-        • Yes please.\n
-        • Sir/Ma'am.\n
+        \n \t \t \t \t Where is the...?\n
+         \t \t \t \t  Can I have water?\n
+        \t \t \t \t  I would like to order this.\n
+        \t \t \t  Thank you, you're welcome.\n
+        \t \t \t \t Excuse me.\n
+         \t \t \t I'm sorry\n
+         \t \t \t Yes please.\n
+         \t \t \tSir/Ma'am.\n
 
     </string>
     <string-array name="law_usa">
