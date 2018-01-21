@@ -1,6 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">CultureShock</string>
-    <string name="title_home">Law</string>
-    <string name="title_dashboard">Culture</string>
-    <string name="title_notifications">Phrases</string>
+    <string name="app_name">Culture Shock</string>
+    <string name="title_home">Home</string>
+    <string name="title_law">Law</string>
+    <string name="title_culture">Culture</string>
+    <string name="title_phrases">Phrases</string>
+    <string name="title_feed">Feed</string>
+
+    <string name="lawText">
+
+        •  Drinking Age 21\n
+        •  Weed is legal in only some states, check the specific state for regulations\n
+        •  Alcoholic Beverages can’t be in public\n
+        •  Driving on the right side of the road\n
+        •  Different states have different laws\n
+        •  Jaywalking is illegal\n
+        •  Smoking is against the law in most public places\n
+        •  Sometimes public spaces will have designated smoking areas\n
+
+    </string>
+
+    <string name="phraseText">
+
+        •Where is the...?\n
+        •Can I have water?\n
+        •I would like to order this.\n
+        •Thank you, you're welcome.\n
+        •Excuse me.\n
+        •I'm sorry\n
+        •Yes please.\n
+        •Sir/Ma'am.\n
+
+    </string>
+    <string-array name="law_usa">
+        <item>•Where is the...?</item>
+        <item>•Can I have water?</item>
+        <item>•I would like to order this.</item>
+        <item>•Thank you, you're welcome.</item>
+        <item>•Excuse me.</item>
+        <item>•I'm sorry</item>
+        <item>•Yes please.</item>
+        <item>•Sir/Ma'am.</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="tbd">TBD</string>
 </resources>

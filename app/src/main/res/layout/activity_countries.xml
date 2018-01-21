@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ryan.cultureshock.Countries">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="46dp"
+        android:layout_height="38dp"
+
+        android:layout_alignBottom="@+id/buttonUSA"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="false"
+        android:layout_marginBottom="11dp"
+        android:layout_marginStart="16dp"
+        android:baselineAlignBottom="false"
+        android:elevation="6dp"
+        app:srcCompat="@drawable/usaflag"
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="32dp" />
+
+    <Button
+        android:id="@+id/buttonUSA"
+        android:layout_width="360dp"
+        android:layout_height="61dp"
+        android:layout_alignParentLeft="true"
+
+        android:layout_alignParentRight="true"
+        android:text="United States of America"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="25dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="360dp"
+        android:layout_height="61dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="70dp"
+        android:text="France"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="107dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="360dp"
+        android:layout_height="61dp"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
+        android:layout_marginTop="140dp"
+        android:text="China"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="203dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="360dp"
+        android:layout_height="61dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="false"
+        android:layout_below="@+id/button8"
+        android:layout_marginTop="210dp"
+        android:text="Brasil"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="297dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="45dp"
+        android:layout_height="38dp"
+        android:layout_alignEnd="@+id/imageView2"
+        android:layout_alignTop="@+id/button2"
+        android:layout_marginTop="12dp"
+        android:elevation="6dp"
+        app:srcCompat="@drawable/franceflag" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="45dp"
+        android:layout_height="38dp"
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_alignTop="@+id/button4"
+        android:layout_marginTop="11dp"
+        android:elevation="6dp"
+        app:srcCompat="@drawable/brazilflag" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_alignEnd="@+id/imageView3"
+        android:layout_alignStart="@+id/imageView4"
+        android:layout_alignTop="@+id/button3"
+        android:elevation="6dp"
+        app:srcCompat="@drawable/chinaflag" />
+
+</RelativeLayout>

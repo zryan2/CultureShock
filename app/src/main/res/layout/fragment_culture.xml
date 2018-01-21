@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ryan.cultureshock.Culture"
+    android:orientation="vertical">
+    <!--android:background="@drawable/nycar">-->
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:text="Behavior"/>
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="match_parent"
+
+        android:layout_height="61dp"
+        android:text="Regional Differences" />
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="match_parent"
+
+        android:layout_height="61dp"
+        android:text="Country Map"/>
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+
+        android:layout_height="61dp"
+        android:text="Food" />
+
+
+
+</LinearLayout>
