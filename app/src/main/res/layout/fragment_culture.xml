@@ -10,20 +10,21 @@
         android:id="@+id/buttonBehavior"
         android:layout_width="match_parent"
         android:layout_height="61dp"
-        android:text="Behavior"/>
+        android:onClick="onClick"
+        android:text="Behavior" />
+
     <Button
         android:id="@+id/buttonRD"
         android:layout_width="match_parent"
-
         android:layout_height="61dp"
+        android:onClick="onClick"
         android:text="Regional Differences" />
-
 
     <Button
         android:id="@+id/buttonFood"
         android:layout_width="match_parent"
-
         android:layout_height="61dp"
+        android:onClick="onClick"
         android:text="Food" />
 
 

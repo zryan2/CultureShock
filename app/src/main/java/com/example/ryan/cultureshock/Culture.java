@@ -13,8 +13,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
+
 
 
 /**
@@ -26,18 +25,21 @@ public class Culture extends Fragment implements View.OnClickListener {
 //    Button buttonBehavior;
 //    Button buttonRD;
 //    Button buttonFood;
+
 public Culture() {
     // Required empty public constructor
 }
 @Override
 public View onCreateView(LayoutInflater inflater, ViewGroup container,
                          Bundle savedInstanceState) {
+    View v = inflater.inflate(R.layout.fragment_culture, container, false);
+    Button a = (Button) v.findViewById(R.id.buttonBehavior);
+    Button b = (Button) v.findViewById(R.id.buttonRD);
+    Button c = (Button) v.findViewById(R.id.buttonFood);
 
-
-    View v = inflater.inflate(R.layout.fragment_behavior, container, false);
-
-    Button b = (Button) v.findViewById(R.id.buttonBehavior);
+    a.setOnClickListener(this);
     b.setOnClickListener(this);
+    c.setOnClickListener(this);
 
     return v;
 }
@@ -51,6 +53,7 @@ public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 selectedFragment = behavior;
                 transaction.replace(R.id.contentLayout,behavior);
                 transaction.commit();
+                break;
             case R.id.buttonRD:
                 //go to Regional Differences fragment
                 RegDiff regDiff = new RegDiff();
@@ -58,6 +61,7 @@ public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 selectedFragment = regDiff;
                 transaction2.replace(R.id.contentLayout,regDiff);
                 transaction2.commit();
+                break;
             case R.id.buttonFood:
                 //go to Food fragment
                 Food food = new Food();
@@ -65,20 +69,9 @@ public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 selectedFragment = food;
                 transaction3.replace(R.id.contentLayout,food);
                 transaction3.commit();
-
                 break;
+
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-            }
+}
 
