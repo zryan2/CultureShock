@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
 
-
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             android.support.v7.app.ActionBar mActionBar = getSupportActionBar();
