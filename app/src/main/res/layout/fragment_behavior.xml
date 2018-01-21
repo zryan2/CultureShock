@@ -6,8 +6,14 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/behaviorText"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:fontFamily="sans-serif"
+        android:lineSpacingExtra="18sp"
         android:text="@string/behaviorsText" />
 
 </FrameLayout>
