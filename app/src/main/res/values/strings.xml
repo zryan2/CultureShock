@@ -8,13 +8,23 @@
 
     <string name="lawText">
 
-        Drinking Age 21
-Weed is legal in only some states, check the specific state for regulations
-Alcoholic Beverages can’t be in public,
-Driving on the right side of the road
-Different states have different laws
-Jaywalking is illegal \n
-Smoking is against the law in most public places. Sometimes public spaces will have designated smoking areas.\n </string>
+        • Drinking Age 21\n
+
+        • Weed is legal in only some states, check the specific state for regulations\n
+
+        • Alcoholic Beverages can’t be in public\n
+
+        • Driving on the right side of the road\n
+
+        • Different states have different laws\n
+
+        • Jaywalking is illegal\n
+
+        • Smoking is against the law in most public places\n
+
+        • Sometimes public spaces will have designated smoking areas\n
+        
+    </string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="tbd">TBD</string>
