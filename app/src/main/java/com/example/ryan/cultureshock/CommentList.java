@@ -37,8 +37,7 @@ public class CommentList extends ArrayAdapter<CommentData> {
         CommentData commentData = commentList.get(position);
 
         textViewComment.setText(commentData.getCommentText());
-//        textViewPriority.setText(Integer.toString(commentData.getPriority()));
-        textViewPriority.setText(commentData.getCommentId());
+        textViewPriority.setText(Integer.toString(commentData.getPriority()));
 
         return listViewItem;
     }

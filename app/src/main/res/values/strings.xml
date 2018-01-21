@@ -32,6 +32,16 @@
         •Sir/Ma'am.\n
 
     </string>
+    <string-array name="law_usa">
+        <item>•Where is the...?</item>
+        <item>•Can I have water?</item>
+        <item>•I would like to order this.</item>
+        <item>•Thank you, you're welcome.</item>
+        <item>•Excuse me.</item>
+        <item>•I'm sorry</item>
+        <item>•Yes please.</item>
+        <item>•Sir/Ma'am.</item>
+    </string-array>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="tbd">TBD</string>

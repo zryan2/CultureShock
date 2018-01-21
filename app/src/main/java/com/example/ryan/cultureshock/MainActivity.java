@@ -48,8 +48,7 @@ public class MainActivity extends AppCompatActivity {
                     selectedFragment = countryInfo;
                     transaction4.replace(R.id.contentLayout, selectedFragment);
                     transaction4.commit();
-                    mActionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#f9e143")));
-
+                    mActionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#4286f4")));
                     return true;
                 case R.id.navigation_law:
                     //go to law fragment
@@ -58,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
                     selectedFragment = law;
                     transaction.replace(R.id.contentLayout, selectedFragment);
                     transaction.commit();
-                    mActionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#f44171")));
+                    mActionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#4286f4")));
 
                     return true;
                 case R.id.navigation_culture:
@@ -68,7 +67,8 @@ public class MainActivity extends AppCompatActivity {
                     selectedFragment = culture;
                     transaction2.replace(R.id.contentLayout, selectedFragment);
                     transaction2.commit();
-                    mActionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#1fb721")));
+                    mActionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#4286f4")));
+
 
                     return true;
                 case R.id.navigation_phrases:

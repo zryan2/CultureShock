@@ -1,6 +1,7 @@
 package com.example.ryan.cultureshock;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.text.TextUtils;
@@ -11,6 +12,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -41,12 +43,15 @@ public class Comments extends Fragment implements View.OnClickListener {
         // Required empty public constructor
     }
 
-
+    ImageView thumbsUp;
+    ImageView thumbsDown;
+    View commentList;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         v = inflater.inflate(R.layout.fragment_comments, container, false);
+        commentList = inflater.inflate(R.layout.fragment_comments_display, container, false);
         databaseComments = FirebaseDatabase.getInstance().getReference("comments");
 
         commentText = (EditText) v.findViewById(R.id.commentText);
@@ -58,9 +63,24 @@ public class Comments extends Fragment implements View.OnClickListener {
         submitBtn.setOnClickListener(this);
 
         listViewComment.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            CommentData commentData;
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
+                commentData = commentDataList.get(i);
+                thumbsUp= (ImageView) commentList.findViewById(R.id.thumbsUp);
+                thumbsDown = (ImageView) commentList.findViewById(R.id.thumbsDown);
+                thumbsUp.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        commentData.incPriority();
+                    }
+                });
+                thumbsDown.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        commentData.decPriority();
+                    }
+                });
             }
         });
 
