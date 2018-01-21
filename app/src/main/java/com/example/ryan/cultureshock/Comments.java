@@ -7,6 +7,7 @@ import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -45,7 +46,7 @@ public class Comments extends Fragment implements View.OnClickListener {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        v=inflater.inflate(R.layout.fragment_comments, container, false);
+        v = inflater.inflate(R.layout.fragment_comments, container, false);
         databaseComments = FirebaseDatabase.getInstance().getReference("comments");
 
         commentText = (EditText) v.findViewById(R.id.commentText);
@@ -53,13 +54,16 @@ public class Comments extends Fragment implements View.OnClickListener {
 
         listViewComment = (ListView) v.findViewById(R.id.listViewComment);
         commentDataList = new ArrayList<>();
+
         submitBtn.setOnClickListener(this);
-//        submitBtn.setOnClickListener(new View.OnClickListener(){
-//            @Override
-//            public void onClick(View view){
-////                addComment();
-//            }
-//        });
+
+        listViewComment.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+            }
+        });
+
         return v;
     }
 
@@ -87,7 +91,7 @@ public class Comments extends Fragment implements View.OnClickListener {
 
     public void onClick(View v){
         switch(v.getId()){
-            case R.id.submitBtn :
+            case R.id.submitBtn:
                 addComment();
                 break;
             default:
