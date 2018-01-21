@@ -21,6 +21,11 @@ public class CommentData {
     public String getCommentText() {
         return commentText;
     }
+
+    public int getPriority() {
+        return priority;
+    }
+
     public void incPriority(){
         priority++;
     }

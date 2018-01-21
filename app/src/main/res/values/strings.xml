@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">CultureShock</string>
+    <string name="app_name">Culture Shock</string>
     <string name="title_home">Home</string>
     <string name="title_law">Law</string>
     <string name="title_culture">Culture</string>
