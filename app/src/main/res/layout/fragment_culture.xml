@@ -3,8 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.ryan.cultureshock.Culture"
-    android:orientation="vertical"
-    android:background="@drawable/nycar">
+    android:orientation="vertical">
+    <!--android:background="@drawable/nycar">-->
 
     <Button
         android:id="@+id/button7"
